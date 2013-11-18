@@ -7,7 +7,7 @@ using System.Web.Mvc;
 
 namespace Klinik.Api.Controllers
 {
-    public class HomeController : HackandCraftController
+    public class HomeController : HackandCraftController 
     {
         //
         // GET: /Home/
