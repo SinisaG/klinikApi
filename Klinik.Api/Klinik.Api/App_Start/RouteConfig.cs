@@ -14,7 +14,7 @@ namespace Klinik.Api
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
-                name: "WEB" ,
+                name: "WEB",
                 url: "{versionno}/web/{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
