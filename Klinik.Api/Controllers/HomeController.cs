@@ -1,4 +1,5 @@
 ﻿using HackandCraft.Api;
+using HackandCraft.Auth;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,10 +12,10 @@ namespace Klinik.Api.Controllers
     {
         //
         // GET: /Home/
-
-        public ActionResult Index()
+        [AuthClient]
+        public string Index()
         {
-            return View();
+            return "hello world";
         }
 
     }
