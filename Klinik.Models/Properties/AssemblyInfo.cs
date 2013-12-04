@@ -4,11 +4,11 @@ using System.Runtime.InteropServices;
 
 
 
-[assembly: AssemblyTitle("Klinik.Api")]
+[assembly: AssemblyTitle("Klinik.Models")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Klinik.Api")]
+[assembly: AssemblyProduct("Klinik.Models")]
 [assembly: AssemblyCopyright("Copyright ©  2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -19,7 +19,8 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 
-[assembly: Guid("f73a9102-f4b8-4ee3-8928-7dd26606cda6")]
+[assembly: Guid("bdd8081b-254e-4a77-9855-6d5a9d650ef2")]
+
 
 
 

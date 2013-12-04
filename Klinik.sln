@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Klinik.Api", "Klinik.Api\Klinik.Api.csproj", "{06453165-5718-4F12-9068-F3622465CE9B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Klinik.Models", "Klinik.Models\Klinik.Models.csproj", "{995ECB11-EE06-49CA-914F-54F1DDEBE7C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{06453165-5718-4F12-9068-F3622465CE9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06453165-5718-4F12-9068-F3622465CE9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06453165-5718-4F12-9068-F3622465CE9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{995ECB11-EE06-49CA-914F-54F1DDEBE7C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{995ECB11-EE06-49CA-914F-54F1DDEBE7C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{995ECB11-EE06-49CA-914F-54F1DDEBE7C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{995ECB11-EE06-49CA-914F-54F1DDEBE7C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
