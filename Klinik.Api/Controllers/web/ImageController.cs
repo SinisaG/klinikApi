@@ -33,7 +33,7 @@ namespace Klinik.Api.Controllers.web
         {
             try
             {
-                result = orm.execObject<Result>(null, "api.admin_image_delete");
+                result = orm.execObject<Result>(image, "api.admin_image_delete");
             }
             catch (Exception exp)
             {
@@ -47,7 +47,7 @@ namespace Klinik.Api.Controllers.web
         {
             try
             {
-                result = orm.execObject<Result>(null, "api.admin_image_add");
+                result = orm.execObject<Result>(image, "api.admin_image_add");
             }
             catch (Exception exp)
             {
