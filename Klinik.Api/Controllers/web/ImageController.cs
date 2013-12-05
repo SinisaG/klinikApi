@@ -1,5 +1,6 @@
 ﻿using HackandCraft.Api;
 using HackandCraft.Auth;
+using Klinik.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,5 +27,34 @@ namespace Klinik.Api.Controllers.web
             }
             return formattedResult(result);
         }
+
+        [AuthClient]
+        public string delete(Image image)
+        {
+            try
+            {
+                result = orm.execObject<Result>(null, "api.admin_image_delete");
+            }
+            catch (Exception exp)
+            {
+                errorResult(exp);
+            }
+            return formattedResult(result);
+        }
+
+        [AuthClient]
+        public string add(Image image)
+        {
+            try
+            {
+                result = orm.execObject<Result>(null, "api.admin_image_add");
+            }
+            catch (Exception exp)
+            {
+                errorResult(exp);
+            }
+            return formattedResult(result);
+        }
+
     }
 }
