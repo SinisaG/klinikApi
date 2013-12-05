@@ -70,5 +70,19 @@ namespace Klinik.Api.Controllers.web
             return formattedResult(result);
         }
 
+        [AuthClient]
+        public string add(Text text)
+        {
+            try
+            {
+                result = orm.execObject<Result>(text, "api.admin_text_add");
+            }
+            catch (Exception exp)
+            {
+                errorResult(exp);
+            }
+            return formattedResult(result);
+        }
+
     }
 }
