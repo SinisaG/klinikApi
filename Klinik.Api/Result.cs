@@ -24,5 +24,7 @@ namespace Klinik.Api
         public List<Image> Images { get; set; }
         [XmlElement]
         public List<Text> Texts { get; set; }
+        [XmlElement]
+        public Text Text { get; set; }
     }
 }
