@@ -20,5 +20,9 @@ namespace Klinik.Api
         public string procName { get; set; }
         [XmlElement]
         public Content Content { get; set; }
+        [XmlElement]
+        public List<Image> Images { get; set; }
+        [XmlElement]
+        public List<Text> Texts { get; set; }
     }
 }
