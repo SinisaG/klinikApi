@@ -38,5 +38,18 @@ namespace Klinik.Api.Controllers.web
             }
             return formattedResult(result);
         }
+
+        public string edit(Control control)
+        {
+            try
+            {
+                result = orm.execObject<Result>(control, "api.control_get_edit");
+            }
+            catch (Exception exp)
+            {
+                errorResult(exp);
+            }
+            return formattedResult(result);
+        }
     }
 }
