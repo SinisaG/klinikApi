@@ -26,5 +26,9 @@ namespace Klinik.Api
         public List<Text> Texts { get; set; }
         [XmlElement]
         public Text Text { get; set; }
+        [XmlElement]
+        public List<Control> Controls { get; set; }
+        [XmlElement]
+        public Control Control { get; set; }
     }
 }

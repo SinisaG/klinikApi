@@ -4,17 +4,19 @@ using Klinik.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Web;
+using System.Web.Mvc;
 
 namespace Klinik.Api.Controllers.web
 {
-    public class ContentController : HackandCraftController
+    public class ControlController : HackandCraftController
     {
         [AuthClient]
-        public string index()
+        public string all()
         {
             try
             {
-                result = orm.execObject<Result>(null, "api.admin_static_get");
+                result = orm.execObject<Result>(null, "api.admin_control_get_all");
             }
             catch (Exception exp)
             {
@@ -24,11 +26,11 @@ namespace Klinik.Api.Controllers.web
         }
 
         [AuthClient]
-        public string set(Content content)
+        public string index(Control control)
         {
             try
             {
-                result = orm.execObject<Result>(content, "api.admin_static_set");
+                result = orm.execObject<Result>(control, "api.control_get");
             }
             catch (Exception exp)
             {
@@ -36,6 +38,5 @@ namespace Klinik.Api.Controllers.web
             }
             return formattedResult(result);
         }
-    
     }
 }

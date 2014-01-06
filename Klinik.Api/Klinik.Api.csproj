@@ -124,6 +124,7 @@
   <ItemGroup>
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\web\ContentController.cs" />
+    <Compile Include="Controllers\web\ControlController.cs" />
     <Compile Include="Controllers\web\ImageController.cs" />
     <Compile Include="Controllers\web\TextController.cs" />
     <Compile Include="Global.asax.cs">
